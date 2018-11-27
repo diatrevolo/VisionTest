@@ -13,6 +13,7 @@
 		8DC64ECC21ACE01100A7B2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC64ECA21ACE01100A7B2DB /* Main.storyboard */; };
 		8DC64ED821ACE01100A7B2DB /* VisionTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC64ED721ACE01100A7B2DB /* VisionTestTests.swift */; };
 		8DC64EE321ACE01100A7B2DB /* VisionTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC64EE221ACE01100A7B2DB /* VisionTestUITests.swift */; };
+		8DC64EF121ACE07C00A7B2DB /* 6398615.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC64EF021ACE07C00A7B2DB /* 6398615.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		8DC64EDE21ACE01100A7B2DB /* VisionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC64EE221ACE01100A7B2DB /* VisionTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTestUITests.swift; sourceTree = "<group>"; };
 		8DC64EE421ACE01100A7B2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC64EF021ACE07C00A7B2DB /* 6398615.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6398615.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				8DC64EC421ACE00F00A7B2DB /* AppDelegate.swift */,
 				8DC64EC621ACE00F00A7B2DB /* ViewController.swift */,
+				8DC64EF021ACE07C00A7B2DB /* 6398615.jpg */,
 				8DC64EC821ACE01100A7B2DB /* Assets.xcassets */,
 				8DC64ECA21ACE01100A7B2DB /* Main.storyboard */,
 				8DC64ECD21ACE01100A7B2DB /* Info.plist */,
@@ -192,6 +195,11 @@
 				TargetAttributes = {
 					8DC64EC021ACE00F00A7B2DB = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					8DC64ED221ACE01100A7B2DB = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC64EC921ACE01100A7B2DB /* Assets.xcassets in Resources */,
+				8DC64EF121ACE07C00A7B2DB /* 6398615.jpg in Resources */,
 				8DC64ECC21ACE01100A7B2DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +439,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rawbirdtoe.VisionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -449,6 +459,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rawbirdtoe.VisionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
